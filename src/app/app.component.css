@@ -1,0 +1,5 @@
+.app-body {
+  background-color: inherit;
+  height: 85vh;
+  display: flex;
+}
