@@ -7,20 +7,25 @@ import { MatButtonModule } from '@angular/material/button';
 import { throwIfAlreadyLoaded } from './guard/throw-already-loaded.guard';
 import { HeaderComponent } from './modules/header/header.component';
 import { SidebarComponent } from './modules/sidebar/sidebar.component';
+import { ContentBodyComponent } from './modules/content-body/content-body.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
+    RouterModule
   ],
   exports: [
     HeaderComponent,
     SidebarComponent,
+    ContentBodyComponent
   ],
   declarations: [
     HeaderComponent,
     SidebarComponent,
+    ContentBodyComponent
   ],
   providers: [],
 })
